@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spring Framework Guru</title>
+</head>
+<body>
+<h1>Authors List</h1>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Lastname</th>
+    </tr>
+    <tr th:each="author: ${authors}">
+        <td th:text="${author.id}">Wrox</td>
+        <td th:text="${author.firstName}">Jhonathan</td>
+        <td th:text="${author.lastName}">Smith</td>
+    </tr>
+</table>
+</body>
+</html>
